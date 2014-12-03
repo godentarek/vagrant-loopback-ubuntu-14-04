@@ -1,5 +1,5 @@
-execute "Installing strong-cli..." do
-    command "npm install -g strong-cli"
+execute "Installing generator-loopback..." do
+    command "rm -rf ~/.npm && npm cache clean"
     user "root"
 end
 
@@ -10,6 +10,16 @@ end
 
 execute "Installing generator-loopback..." do
     command "npm install -g generator-loopback"
+    user "root"
+end
+
+execute "Installing generator-loopback..." do
+    command "rm -rf ~/.npm && npm cache clean"
+    user "root"
+end
+
+execute "Installing strong-cli..." do
+    command "npm install -g strong-cli"
     user "root"
 end
 
